@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>translate实现垂直水平居中</title>
+    <style>
+        #outer{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            margin: 0 auto;
+
+            position: relative;
+        }
+        #inner{
+            width: 100px;
+            height: 100px;
+            background-color: darkgreen;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+
+            border: 5px solid yellow;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="outer">
+    <div id="inner">
+
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

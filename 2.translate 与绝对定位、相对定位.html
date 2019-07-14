@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>translate与绝对定位、相对定位</title>
+    <style>
+        #box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+            position: relative;
+            top: 200px;
+            left: 300px;
+        }
+
+        #box2{
+            width: 200px;
+            height: 200px;
+            background-color: darkgreen;
+
+            transform: translate(200px,300px);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box1"></div>
+
+    <div id="box2"></div>
+
+    <script>
+        var box1Left = document.getElementById("box1").offsetLeft;
+        var box1Top = document.getElementById("box1").offsetTop;
+        console.log(box1Left);
+        console.log(box1Top);
+
+        var box2Left = document.getElementById("box2").offsetLeft;
+        var box2Top = document.getElementById("box2").offsetTop;
+        console.log(box2Left);
+        console.log(box2Top);
+    </script>
+</body>
+</html>
